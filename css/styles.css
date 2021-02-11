@@ -1,0 +1,160 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+}
+p{
+    line-height: 145%;
+}
+nav{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    font-family: 'Prata', serif;
+    font-size: 22px;
+}
+.navigation li a{
+    color:#557174;
+    text-decoration: none;
+    transition: all 1s;
+}
+.navigation li a:hover{
+    color:#374045;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 40px;   
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Prata', serif;
+}
+h1{
+    font-size: 150px;
+    margin: 0;
+}
+h2{
+    font-size: 100px;
+}
+h3{
+    font-size: 50px;
+}
+h4{
+    font-size: 32px;
+    color:#d4e2d4;
+    background-color:#276678;
+    display: inline-block;
+    margin:0;
+    padding: 4px;
+}
+.proyectos a, .about a{
+    letter-spacing: 3px;
+    color:#2ce6dc;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.proyectos h2,.about h2{
+    color: #eb5e0b;
+}
+.proyectos h3{
+    color:#16796e;
+}
+
+.about h3{
+    color: #008891;
+    margin: 0 0 70px 0;
+    line-height: 100%;
+}
+.about a{
+    color: #ef4f4f;
+}
+
+.contact h2{
+    color:#008891;
+    margin-bottom: -2px;
+}
+.contact h3{
+    color:#a3d2ca;
+    font-size: 40px;
+}
+.navigation{
+    text-align: center;
+}
+.navigation li{
+    display: inline-block;
+    margin : 0 15px;
+    color:#557174;
+}
+.left-col, .right-col{
+    color: #ffffff;
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-col{
+    background-color: #5eaaa8;
+}
+.right-col{
+    background-color:#e08f62;
+}
+.proyectos{
+    color: #16736e;
+}
+.top-container{
+    width: 500px;
+    margin:0 auto;
+}
+.scroll{
+    color: #003170;
+    text-align: center;
+}
+.img-proyecto{
+    position: relative;
+    width: 100%;
+}
+.proyectos h4{
+    position:absolute;
+    z-index: 1;
+    top: -25px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.proyectos h4.right-align{
+    right: 0;
+}
+.extra-gutters{
+    padding: 0 60px;
+}
+
+.right-align{
+    text-align: right;
+}
+.img-margin{
+    margin-bottom: 20px;
+}
+footer{
+    background-color: #d89216;
+    min-height: 220px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.social-icon{
+    height: 60px;
+    margin: 10px 20px;
+}
+.social-icon-container{
+    text-align: center;
+}
