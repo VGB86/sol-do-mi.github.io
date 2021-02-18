@@ -1,3 +1,5 @@
+/* Generales*/
+
 html{
     height: 100%;
 }
@@ -8,25 +10,6 @@ body{
 }
 p{
     line-height: 145%;
-}
-nav{
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    right: 0;
-    font-family: 'Prata', serif;
-    font-size: 22px;
-}
-.navigation li a{
-    color:#557174;
-    text-decoration: none;
-    transition: all 1s;
-}
-.navigation li a:hover{
-    color:#374045;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 40px;   
 }
 h1,h2,h3,h4,h5{
     font-family: 'Prata', serif;
@@ -49,36 +32,29 @@ h4{
     margin:0;
     padding: 4px;
 }
-.proyectos a, .about a{
-    letter-spacing: 3px;
-    color:#2ce6dc;
-    font-size: 18px;
+img{
+    max-width: 100%;
+}
+
+/*Nav*/
+nav{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    font-family: 'Prata', serif;
+    font-size: 22px;
+}
+.navigation li a{
+    color:#557174;
+    text-decoration: none;
+    transition: all 1s;
+}
+.navigation li a:hover{
+    color:#374045;
     text-decoration: none;
     font-weight: bold;
-}
-.proyectos h2,.about h2{
-    color: #eb5e0b;
-}
-.proyectos h3{
-    color:#16796e;
-}
-
-.about h3{
-    color: #008891;
-    margin: 0 0 70px 0;
-    line-height: 100%;
-}
-.about a{
-    color: #ef4f4f;
-}
-
-.contact h2{
-    color:#008891;
-    margin-bottom: -2px;
-}
-.contact h3{
-    color:#a3d2ca;
-    font-size: 40px;
+    font-size: 40px;   
 }
 .navigation{
     text-align: center;
@@ -87,6 +63,16 @@ h4{
     display: inline-block;
     margin : 0 15px;
     color:#557174;
+}
+
+/*About*/
+.about h3{
+    color: #008891;
+    margin: 0 0 70px 0;
+    line-height: 100%;
+}
+.about a{
+    color: #ef4f4f;
 }
 .left-col, .right-col{
     color: #ffffff;
@@ -102,16 +88,32 @@ h4{
 .right-col{
     background-color:#e08f62;
 }
-.proyectos{
-    color: #16736e;
+.scroll{
+    color: #003170;
+    text-align: center;
 }
 .top-container{
     width: 500px;
     margin:0 auto;
 }
-.scroll{
-    color: #003170;
-    text-align: center;
+
+
+/*Proyectos*/
+.proyectos a, .about a{
+    letter-spacing: 3px;
+    color:#2ce6dc;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.proyectos h2,.about h2{
+    color: #eb5e0b;
+}
+.proyectos h3{
+    color:#16796e;
+}
+.proyectos{
+    color: #16736e;
 }
 .img-proyecto{
     position: relative;
@@ -122,11 +124,6 @@ h4{
     z-index: 1;
     top: -25px;
 }
-
-img{
-    max-width: 100%;
-}
-
 .proyectos h4.right-align{
     right: 0;
 }
@@ -140,6 +137,18 @@ img{
 .img-margin{
     margin-bottom: 20px;
 }
+
+/*Contacto*/
+.contact h2{
+    color:#008891;
+    margin-bottom: -2px;
+}
+.contact h3{
+    color:#a3d2ca;
+    font-size: 40px;
+}
+
+/*Footer*/
 footer{
     background-color: #d89216;
     min-height: 220px;
@@ -158,3 +167,55 @@ footer{
 .social-icon-container{
     text-align: center;
 }
+
+@media (max-width: 991px) {
+    .proyectos h4{
+       visibility: hidden;
+    }
+}
+
+@media (max-width: 415px) {
+    html{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    nav{
+        font-size: 18px;
+        background-color: #e08f62;
+        position: fixed;
+    }
+    .navigation{
+        text-align:initial;
+    }
+    .navigation li a{
+        color:#ffffff;
+    }
+    .scroll, .proyectos h4{
+        visibility: hidden;
+    }
+    h2{
+        font-size: 60px;
+        margin-bottom: 0em;
+        text-align: center;
+    }
+    .row, .contact{
+        display: block;
+    }
+    .right-align{
+        text-align:left;
+    }
+    .proyectos h4{
+        position:relative;        
+        top: 0px;
+    }
+    .about h3{
+        text-align: center;
+    }
+    .contact h2, .about h2{
+        margin-bottom: 1em;
+        margin-top: 2em;
+    }
+    .contact h3{
+        font-size: 12px;
+    }
+} 
